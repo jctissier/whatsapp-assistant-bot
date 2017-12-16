@@ -42,6 +42,9 @@ The bot will always send back screenshots of the Chrome browser
 /google {query}              # Search google text
 /images {query}              # Search google images
 /maps                        # Directions with Google Maps
+    /origin {from where}     # Sub-menus from /maps
+    /dest {to where}
+    /mode {driving, walking, transit, bicycling}
 ```
 
 ## How Selenium Automates the Bot
@@ -49,6 +52,7 @@ I was able to scan incoming/outgoing messages by inspecting the HTML and using s
 ![Scan Messages](https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/chat_history_documentation.png)
 
 **Testing**
+
 You can either create a bot account (as mentioned above) or you can use your own account to test it. 
 
 * In the function chat_history(), set the first line of the function to "message-out"
@@ -58,7 +62,6 @@ You can either create a bot account (as mentioned above) or you can use your own
 
 **Flowchart for Main Features**
 ![Flow Chart](https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/flowchart/GoogleResults%20Flowchart.png)
-
 
 ## How I Use It
 I run the script from my home computer in Canada and I have a separate WhatsApp account running 24/7. 
@@ -73,6 +76,7 @@ You can create a free WhatsApp account if you have a spare/old smartphone.
    * Account should now be created, you can now message the bot to that particular number that was generated with the app
    
 There is plenty more that can be done with this bot, but I only needed basic googling. 
+
 
 
 ## Comments
