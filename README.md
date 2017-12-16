@@ -59,6 +59,15 @@ You can create a free WhatsApp account if you have a spare/old smartphone.
    
 There is plenty more that can be done with this bot, but I only needed basic googling. 
 
+## Testing
+You can either create a bot account (as mentioned above) or you can use your own account to test it. 
+
+* In the function chat_history(), set the first line of the function to "message-out"
+   * This allows the bot to only scan for messages sent by yourself
+   * You can send commands to yourself and the bot will respond (no need for a spare account)
+* "message-in" forces to bot to scan for incoming messages from the other person
+
+
 ## Comments
 Author: Jean-Claude Tissier
 I created this bot for when I travel since I have unlimited WhatsApp everywhere in the world but no data plan. I needed a way to be able to find directions, search for touristy attractions and general googling necessities in a new city without having data and this bot fixed it. 
