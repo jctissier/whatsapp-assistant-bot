@@ -42,7 +42,6 @@ The bot will always send back screenshots of the Chrome browser
 /google {query}              # Search google text
 /images {query}              # Search google images
 /maps                        # Directions with Google Maps
-
 ```
 
 ## How I Use It
