@@ -26,8 +26,8 @@ $ cd whatsapp-assistant-bot
 $ python3 whatsapp_assistant_bot.py
 ```
 
-If you get an error at this stage, it's most likely due to Chromedriver not being installed properly. 
+*If you get an error at this stage, it's most likely due to Chromedriver not being installed properly.*
 
-Script is running properly if you see "Bot is active, scan your QR code from your phone's WhatsApp"
+Script is running properly if you see **"Bot is active, scan your QR code from your phone's WhatsApp"**
 * Scan your QR Code
 ![QR Code](https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/scan_qr_code_doc.png)
