@@ -81,7 +81,7 @@ There is plenty more that can be done with this bot, but I only needed basic goo
 
 
 ## Comments
-Author: Jean-Claude Tissier
+**Author: Jean-Claude Tissier**
 
 I created this bot for when I travel since I have unlimited WhatsApp everywhere in the world but no data plan. I needed a way to be able to find directions, search for touristy attractions and general googling necessities in a new city without having data and this bot fixed it. 
 
