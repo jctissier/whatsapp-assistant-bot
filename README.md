@@ -69,6 +69,7 @@ You can either create a bot account (as mentioned above) or you can use your own
 
 ## Comments
 Author: Jean-Claude Tissier
+
 I created this bot for when I travel since I have unlimited WhatsApp everywhere in the world but no data plan. I needed a way to be able to find directions, search for touristy attractions and general googling necessities in a new city without having data and this bot fixed it. 
 
 Feel free to grab the code and let me know if you have questions.
