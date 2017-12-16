@@ -8,7 +8,7 @@ A personal WhatsApp assistant bot that will help you search anything on the web:
      * User can set {origin}, {destination} and {travelmode}
 
 ## Demo
-GIF of how the script works
+![Demo](https://i.imgur.com/j6xPEvy.gif)
 
 ## What You'll Need
 **Chromedriver**
