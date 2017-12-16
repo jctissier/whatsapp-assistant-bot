@@ -10,6 +10,5 @@ A personal WhatsApp assistant bot that will help you search anything on the web:
 **Chromedriver**
 
 * [Setup chromedriver](http://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/)
-
 * [Download chromedriver](https://sites.google.com/a/chromium.org/chromedriver/)
 
