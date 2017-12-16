@@ -9,7 +9,6 @@ A personal WhatsApp assistant bot that will help you search anything on the web:
 
 ## Demo
 ![Demo](https://i.imgur.com/aRdPR81.gif) 
-![asdfasdf](https://i.imgur.com/aRdPR81.gif)
 
 ## What You'll Need
 **Chromedriver**
