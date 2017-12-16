@@ -7,6 +7,9 @@ A personal WhatsApp assistant bot that will help you search anything on the web:
   * Directions from Google Maps
      * User can set {origin}, {destination} and {travelmode}
 
+## Demo
+GIF of how the script works
+
 ## What You'll Need
 **Chromedriver**
 
@@ -31,3 +34,35 @@ $ python3 whatsapp_assistant_bot.py
 Script is running properly if you see **"Bot is active, scan your QR code from your phone's WhatsApp"**
 * Scan your QR Code
 ![QR Code](https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/scan_qr_code_doc.png)
+* Select a chat and start sending commands
+
+## Valid Commands
+The bot will always send back screenshots of the Chrome browser 
+``` 
+/google {query}              # Search google text
+/images {query}              # Search google images
+/maps                        # Directions with Google Maps
+
+```
+
+## How I Use It
+I run the script from my home computer in Canada, I have a separate WhatsApp account running 24/7. 
+
+You can create a free WhatsApp account if you have a spare/old smartphone. 
+* Charge the device 24/7, have it on Wifi and download WhatsApp on it (SIM card is not needed)
+* When they ask you to verify your WhatsApp and need a number to text
+   * Download one of the many apps on app store which allows you to get a temporary phone number 
+      * For example, I use [textPlus](https://textplus.com/) - FREE
+      * Generate a free number and use it to verify your bot account
+   * For the verification, ask for a call, answer the call and set the password
+   * Account should now be created, you can now message the bot to that particular number that was generated with the app
+   
+There is plenty more that can be done with this bot, but I only needed basic googling. 
+
+## Comments
+Author: Jean-Claude Tissier
+I created this bot for when I travel since I have unlimited WhatsApp everywhere in the world but no data plan. I needed a way to be able to find directions, search for touristy attractions and general googling necessities in a new city without having data and this bot fixed it. 
+
+Feel free to grab the code and let me know if you have questions.
+
+*PS: This bot is not meant for spamming and is only meant for personal use.* 
