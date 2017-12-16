@@ -53,7 +53,7 @@ I was able to scan incoming/outgoing messages by inspecting the HTML and using s
 
 **Testing**
 
-You can either create a bot account ([as mentioned below](https://github.com/jctissier/whatsapp-assistant-bot#how-i-use-it) or you can use your own account to test it. 
+You can either create a bot account ([as mentioned below](https://github.com/jctissier/whatsapp-assistant-bot#how-i-use-it)) or you can use your own account to test it. 
 
 * In the function chat_history(), set the first line of the function to "message-out"
    * This allows the bot to only scan for messages sent by yourself
