@@ -46,7 +46,7 @@ The bot will always send back screenshots of the Chrome browser
 ```
 
 ## How I Use It
-I run the script from my home computer in Canada, I have a separate WhatsApp account running 24/7. 
+I run the script from my home computer in Canada and I have a separate WhatsApp account running 24/7. 
 
 You can create a free WhatsApp account if you have a spare/old smartphone. 
 * Charge the device 24/7, have it on Wifi and download WhatsApp on it (SIM card is not needed)
