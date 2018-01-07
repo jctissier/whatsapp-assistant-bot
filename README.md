@@ -81,8 +81,7 @@ There is plenty more that can be done with this bot, but I only needed basic goo
 
 
 ## Comments
-**Author: Jean-Claude Tissier**
-
+**Author: Jean-Claude Tissier**<br>
 **License: MIT**
 
 
