@@ -82,11 +82,10 @@ There is plenty more that can be done with this bot, but I only needed basic goo
 
 ## Comments
 **Author: Jean-Claude Tissier**
+**License: MIT**
 
 I created this bot for when I travel since I have unlimited WhatsApp everywhere in the world but no data plan. I needed a way to be able to find directions, search for touristy attractions and general googling necessities in a new city without having data. 
 
 Feel free to grab the code and let me know if you have questions.
-
-MIT License
 
 *PS: This bot is not meant for spamming and is only meant for personal use.* 
