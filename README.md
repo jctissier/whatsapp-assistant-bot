@@ -87,4 +87,6 @@ I created this bot for when I travel since I have unlimited WhatsApp everywhere 
 
 Feel free to grab the code and let me know if you have questions.
 
+MIT License
+
 *PS: This bot is not meant for spamming and is only meant for personal use.* 
