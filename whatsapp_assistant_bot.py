@@ -290,18 +290,16 @@ Helper Methods
 
 
 def chat_history():
-    text_bubbles = driver.find_elements_by_class_name("message-in")  # message-in = receiver, message-out = sender
-
+    text_bubbles = driver.find_elements_by_class_name("message-out")  # message-in = receiver, message-out = sender
     tmp_queue = []
 
     try:
         for bubble in text_bubbles:
-            msg_texts = bubble.find_elements_by_class_name("bubble-text")
-
+            msg_texts = bubble.find_elements_by_class_name("copyable-text")
             for msg in msg_texts:
-                raw_msg_text = msg.find_element_by_class_name("emojitext").text.lower()
+                #raw_msg_text = msg.find_element_by_class_name("selectable-text.invisible-space.copyable-text").text.lower()
                 # raw_msg_time = msg.find_element_by_class_name("bubble-text-meta").text        # time message sent
-                tmp_queue.append(raw_msg_text)
+                tmp_queue.append(msg.text.lower())
 
         if len(tmp_queue) > 0:
             return tmp_queue[-1]  # Send last message in list
@@ -322,7 +320,7 @@ def is_action_message(last_msg):
 
 
 def send_message(msg):
-    whatsapp_msg = driver.find_element_by_class_name('pluggable-input-body')
+    whatsapp_msg = driver.find_element_by_class_name('_2S1VP')
     whatsapp_msg.send_keys(msg)
     whatsapp_msg.send_keys(Keys.ENTER)
 
