@@ -10,6 +10,23 @@ A personal WhatsApp assistant bot that will help you search anything on the web:
 ## Demo
 <img src="https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/whatsappbotdemo.gif" width="640" height="480" />
 
+## Step by Step Guide
+I have been receiving a lot of requests about what to do when the bot starts running. Here is a step by step example:
+1. Once the bot is running, it should automatically open chrome and display the whatsapp web QR code
+![QR Code Scan](https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/tutorial%20-%20run%20bot.png)
+
+2. **Line 293 of whatsapp_assistant_bot.py** can be changed to read incoming messages (other person in conversation) vs outgoing messages (your own messages)
+```
+text_bubbles = driver.find_elements_by_class_name("message-out")  # message-in = incoming, message-out = outgoing
+```
+![Incoming vs Outgoing](https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/tutorial%20-%20features.png)
+
+3. Example of sending commands and the bot scanning for outgoing messages (my messages)
+![Test outgoing](https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/tutorial%20-%20sending%20or%20receiving%20messages.png)
+
+4. Example of asking the bot to google something. Since the bot is running on your computer, chrome will be automated by selenium and you will see a chrome page open, a screenshot will be taken and attached to the chat.
+![Test Google](https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/tutorial%20-%20google%20feature.png)
+
 ## What You'll Need
 **Chromedriver**
 
