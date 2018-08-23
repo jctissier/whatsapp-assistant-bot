@@ -28,11 +28,13 @@ text_bubbles = driver.find_elements_by_class_name("message-out")  # message-in =
 ![Test Google](https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/tutorial%20-%20google%20feature.png)
 
 ## What You'll Need
+1. Install Chromedriver and make sure the Setup is completed (add the path to the chromedriver executable)
 **Chromedriver**
 
 * [Setup chromedriver](http://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/)
 * [Download chromedriver](https://sites.google.com/a/chromium.org/chromedriver/)
 
+2. Install Selenium from your command line
 **Selenium**
 ```
 $ pip3 install selenium
@@ -46,7 +48,7 @@ $ cd whatsapp-assistant-bot
 $ python3 whatsapp_assistant_bot.py
 ```
 
-*If you get an error at this stage, it's most likely due to Chromedriver not being installed properly.*
+*If you get an error at this stage, it's most likely due to Chromedriver not being installed properly. Repeat the first step.*
 
 Script is running properly if you see **"Bot is active, scan your QR code from your phone's WhatsApp"**
 * Scan your QR Code
