@@ -12,7 +12,7 @@ A personal WhatsApp assistant bot that will help you search anything on the web:
 
 ## Step by Step Guide
 I have been receiving a lot of requests about what to do when the bot starts running. Here is a step by step example:
-1. Once the bot is running, it should automatically open chrome and display the whatsapp web QR code
+1. Once the bot is running, it should automatically open chrome and display the whatsapp web QR code. Once you scan it, you should be able to see a list of your conversations, choose the one you want to test with. 
 ![QR Code Scan](https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/tutorial%20-%20run%20bot.png)
 
 2. **Line 293 of whatsapp_assistant_bot.py** can be changed to read incoming messages (other person in conversation) vs outgoing messages (your own messages)
