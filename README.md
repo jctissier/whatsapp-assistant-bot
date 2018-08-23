@@ -29,6 +29,7 @@ text_bubbles = driver.find_elements_by_class_name("message-out")  # message-in =
 
 ## What You'll Need
 1. Install Chromedriver and make sure the Setup is completed (add the path to the chromedriver executable)
+
 **Chromedriver**
 
 * [Setup chromedriver](http://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/)
