@@ -18,6 +18,7 @@ A personal WhatsApp assistant bot that will help you search anything on the web:
 - [x] Search Google
 - [x] Search Google Images
 - [x] Search Google Maps
+- [ ] Google Maps directions from user's location
 
 ## Down the road
 - [ ] Remotely access the QR code
