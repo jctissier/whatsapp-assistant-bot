@@ -10,6 +10,21 @@ A personal WhatsApp assistant bot that will help you search anything on the web:
 ## Demo
 <img src="https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/whatsappbotdemo.gif" width="640" height="480" />
 
+# TODOs 
+
+## Features
+- [x] Bot can poll 1 conversation
+- [ ] Bot can poll multiple assigned conversations
+- [x] Search Google
+- [x] Search Google Images
+- [x] Search Google Maps
+
+## Down the road
+- [ ] Remotely access the QR code
+- [ ] Image to text analysis w/ Pytesseract 
+- [ ] Run bot on Raspberry Pi (home server)
+
+
 ## Step by Step Guide
 I have been receiving a lot of requests about what to do when the bot starts running. Here is a step by step example:
 1. Once the bot is running, it should automatically open chrome and display the whatsapp web QR code. Once you scan it, you should be able to see a list of your conversations, choose the one you want to test with. 
