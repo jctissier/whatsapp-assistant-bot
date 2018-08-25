@@ -23,7 +23,7 @@ A personal WhatsApp assistant bot that will help you search anything on the web:
 ## Down the road
 - [ ] Remotely access the QR code
 - [ ] Image to text analysis w/ Pytesseract 
-- [ ] Run bot on Raspberry Pi (home server)
+- [ ] Flask server running headless Chrome
 
 
 ## Step by Step Guide
