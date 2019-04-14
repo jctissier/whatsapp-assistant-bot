@@ -239,10 +239,10 @@ class GoogleResults(object):        # Make this parent
 
         # local variables for x_path elements on browser
         attach_xpath = '//*[@id="main"]/header/div[3]/div/div[2]/div'
-        send_file_xpath = '//*[@id="app"]/div/div/div[1]/div[2]/span/div/span/div/div/div[2]/span[2]/div/div'
+        send_file_xpath = '/html/body/div[1]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span[2]/div/div/span'
 
         if self.attachment_type == "img":
-            attach_type_xpath = '//*[@id="main"]/header/div[3]/div/div[2]/span/div/div/ul/li[1]/input'
+            attach_type_xpath = '/html/body/div[1]/div/div/div[4]/div/header/div[3]/div/div[2]/span/div/div/ul/li[1]/button/input'
         elif self.attachment_type == "cam":
             attach_type_xpath = '//*[@id="main"]/header/div[3]/div/div[2]/span/div/div/ul/li[2]/button'
         elif self.attachment_type == "doc":
@@ -263,10 +263,10 @@ class GoogleResults(object):        # Make this parent
             send_btn = driver.find_element_by_xpath(send_file_xpath)
             send_btn.click()
 
-            # close attach menu
-            time.sleep(1)
-            attach_btn = driver.find_element_by_xpath(attach_xpath)
-            attach_btn.click()
+            # close attach menu - Not needed !!!
+            # time.sleep(1)
+            # attach_btn = driver.find_element_by_xpath(attach_xpath)
+            # attach_btn.click()
 
         except (NoSuchElementException, ElementNotVisibleException) as e:
             print(str(e))
