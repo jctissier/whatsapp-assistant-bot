@@ -10,6 +10,10 @@ driver = webdriver.Chrome()                     # Needs to be global for all cla
 driver.get('https://web.whatsapp.com')
 
 
+MESSAGE_BUBBLE_CLASS_NAME = "_13mgZ"            # !!! Update this if the bot stops working, means Whatsapp have changed
+                                                # the class attribute names
+
+
 class BotConfig(object):
     last_msg = False
     last_msg_id = False
@@ -111,7 +115,12 @@ class Bot(object):
     @staticmethod
     def _help_commands():
         print("Asking for help")
-        return "Commands: /hi, /all_commands, /google {query}, /images {query}, /maps"
+        return "List of commands:\n" \
+               "/hi (bot says hi), " \
+               "/all_commands (ist of all commands), " \
+               "/google {query} (searches google and returns a screenshot of the query), " \
+               "/images {query} (searches google immages and returns a screenshot of the query), " \
+               "/maps (searches google maps and returns a screenshot of the query)"
 
 
 class GoogleMapsParser(object):
@@ -263,11 +272,6 @@ class GoogleResults(object):        # Make this parent
             send_btn = driver.find_element_by_xpath(send_file_xpath)
             send_btn.click()
 
-            # close attach menu - Not needed !!!
-            # time.sleep(1)
-            # attach_btn = driver.find_element_by_xpath(attach_xpath)
-            # attach_btn.click()
-
         except (NoSuchElementException, ElementNotVisibleException) as e:
             print(str(e))
             send_message((str(e)))
@@ -297,8 +301,6 @@ def chat_history():
         for bubble in text_bubbles:
             msg_texts = bubble.find_elements_by_class_name("copyable-text")
             for msg in msg_texts:
-                #raw_msg_text = msg.find_element_by_class_name("selectable-text.invisible-space.copyable-text").text.lower()
-                # raw_msg_time = msg.find_element_by_class_name("bubble-text-meta").text        # time message sent
                 tmp_queue.append(msg.text.lower())
 
         if len(tmp_queue) > 0:
@@ -320,7 +322,7 @@ def is_action_message(last_msg):
 
 
 def send_message(msg):
-    whatsapp_msg = driver.find_element_by_class_name('_2S1VP')
+    whatsapp_msg = driver.find_element_by_class_name(MESSAGE_BUBBLE_CLASS_NAME)
     whatsapp_msg.send_keys(msg)
     whatsapp_msg.send_keys(Keys.ENTER)
 
