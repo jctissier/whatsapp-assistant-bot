@@ -7,6 +7,8 @@ A personal WhatsApp assistant bot that will help you search anything on the web:
   * Directions from Google Maps
      * User can set {origin}, {destination} and {travelmode}
 
+** If bot fails when you first run it, please check and update if the class attribute for Line 13 has changed: MESSAGE_BUBBLE_CLASS_NAME = "_13mgZ". 1) Inspect the Whatsapp text bubble element, 2) Extract the class attribute and update Line 13**
+
 ## Demo
 <img src="https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/whatsappbotdemo.gif" width="640" height="480" />
 
