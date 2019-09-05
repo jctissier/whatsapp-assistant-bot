@@ -69,7 +69,7 @@ class Bot(object):
                     self.bot_options(action=last_msg)
 
     def bot_options(self, action):
-        simple_menu = {                                 # function requires no extra arguments
+        simple_menu = {                                 # Function requires no extra arguments
             "hi": say_hi,
             "help": self._help_commands,
             "all_commands": self.config.get_command_history,
@@ -117,16 +117,16 @@ class Bot(object):
         print("Asking for help")
         return "List of commands:\n" \
                "/hi (bot says hi), " \
-               "/all_commands (ist of all commands), " \
-               "/google {query} (searches google and returns a screenshot of the query), " \
-               "/images {query} (searches google immages and returns a screenshot of the query), " \
-               "/maps (searches google maps and returns a screenshot of the query)"
+               "/all_commands (list of all commands), " \
+               "/google {query} (searches Google and returns a screenshot of the query), " \
+               "/images {query} (searches Google Images and returns a screenshot of the query), " \
+               "/maps (searches Google Maps and returns a screenshot of the query)"
 
 
 class GoogleMapsParser(object):
     # Add different options for google maps, with location sent, point of interest, etc...
 
-    def __init__(self, command):            # TODO - command is used if i need more types of command arguments
+    def __init__(self, command):            # TODO - command is used if I need more types of command arguments
         self.command_type = command
         send_message("Answer the next 3 questions (you can exit anytime by sending me /stop)")
 
@@ -157,7 +157,7 @@ class GoogleMapsParser(object):
 
     def _poll_maps_vars(self, var_type):
         while True:
-            maps_details = chat_history()                       # add /exit also?
+            maps_details = chat_history()                       # Add /exit also?
             if "/stop" in maps_details:
                 return False
 
@@ -200,7 +200,7 @@ class GoogleResults(object):        # Make this parent
         # TODO - add streetview and the other maps options
 
         if self.google_maps:
-            t_mode = self._check_travel_mode(kwargs.get('travel_mode'))     # default to driving
+            t_mode = self._check_travel_mode(kwargs.get('travel_mode'))     # Default to driving
             send_message(
                 "Searching Google Maps: '{ori} to {dest} by {mode}'".format(ori=origin, dest=destination, mode=t_mode))
 
@@ -232,11 +232,11 @@ class GoogleResults(object):        # Make this parent
         if self.search_url:
             driver.execute_script("window.open('','_blank');")
             driver.switch_to.window(driver.window_handles[1])
-            driver.get(self.search_url)  # search image
+            driver.get(self.search_url)  # Search image
             time.sleep(1.5)
-            driver.save_screenshot('screenshot.png')  # take screenshot
-            driver.close()  # close window
-            driver.switch_to.window(driver.window_handles[0])  # switch back to whatsapp
+            driver.save_screenshot('screenshot.png')  # Take screenshot
+            driver.close()  # Close window
+            driver.switch_to.window(driver.window_handles[0])  # Switch back to whatsapp
 
             self._attach_and_send_screenshot()
 
@@ -246,7 +246,7 @@ class GoogleResults(object):        # Make this parent
     def _attach_and_send_screenshot(self):
         # TODO - ElementNotVisibleException - this shouldn't happen but when would it
 
-        # local variables for x_path elements on browser
+        # Local variables for x_path elements on browser
         attach_xpath = '//*[@id="main"]/header/div[3]/div/div[2]/div'
         send_file_xpath = '/html/body/div[1]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span[2]/div/div/span'
 
@@ -258,7 +258,7 @@ class GoogleResults(object):        # Make this parent
             attach_type_xpath = '//*[@id="main"]/header/div[3]/div/div[2]/span/div/div/ul/li[3]/input'
 
         try:
-            # open attach menu
+            # Open attach menu
             attach_btn = driver.find_element_by_xpath(attach_xpath)
             attach_btn.click()
 
@@ -267,7 +267,7 @@ class GoogleResults(object):        # Make this parent
             attach_img_btn = driver.find_element_by_xpath(attach_type_xpath)
 
             # TODO - might need to click on transportation mode if url doesn't work
-            attach_img_btn.send_keys(os.getcwd() + "/screenshot.png")           # get current script path + img_path
+            attach_img_btn.send_keys(os.getcwd() + "/screenshot.png")           # Get current script path + img_path
             time.sleep(1)
             send_btn = driver.find_element_by_xpath(send_file_xpath)
             send_btn.click()
