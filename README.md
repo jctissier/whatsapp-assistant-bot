@@ -1,5 +1,8 @@
 # whatsapp-assistant-bot
 
+## Demo
+<img src="https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/whatsappbotdemo.gif" width="640" height="480" />
+
 A personal WhatsApp assistant bot that will help you search anything on the web:
 <br><i>script is automated with selenium, the bot will check the chat and reply on valid commands</i>
   * Search Google
@@ -14,9 +17,6 @@ MESSAGE_BUBBLE_CLASS_NAME = "_13mgZ"
 **1) Inspect the Whatsapp text bubble element**
 <br>
 **2) Extract the class attribute and update Line 13**
-
-## Demo
-<img src="https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/whatsappbotdemo.gif" width="640" height="480" />
 
 # TODOs 
 
