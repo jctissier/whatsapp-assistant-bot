@@ -1,4 +1,4 @@
-# whatsapp-assistant-bot
+# WhatsApp Assistant Bot
 
 ## Demo
 <img src="https://github.com/jctissier/whatsapp-assistant-bot/blob/master/documentation/pics/whatsappbotdemo.gif" width="640" height="480" />
