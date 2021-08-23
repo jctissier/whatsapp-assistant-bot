@@ -57,7 +57,7 @@ text_bubbles = driver.find_elements_by_class_name("message-out")  # message-in =
 **Chromedriver**
 
 * [Setup chromedriver](http://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/)
-* [Download chromedriver](https://sites.google.com/a/chromium.org/chromedriver/)
+* [Download chromedriver](https://sites.google.com/chromium.org/driver/)
 
 2. Install Selenium from your command line
 **Selenium**
